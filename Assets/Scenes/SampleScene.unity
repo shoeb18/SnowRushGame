@@ -2275,6 +2275,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6583283171340157868, guid: bc7f861c7c68bc347b2c3b5a34a92a78, type: 3}
   m_PrefabInstance: {fileID: 7093526057108363485}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1834898877 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 56589649768386900, guid: bc7f861c7c68bc347b2c3b5a34a92a78, type: 3}
+  m_PrefabInstance: {fileID: 7093526057108363485}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834898870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b89265dd7465264f8ade47feed59c10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1834898879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2749,6 +2760,10 @@ PrefabInstance:
       propertyPath: crashSFX
       value: 
       objectReference: {fileID: 8300000, guid: 7a0d61e795e3f70459a357fdd2a9916a, type: 3}
+    - target: {fileID: 5056512374120020260, guid: bc7f861c7c68bc347b2c3b5a34a92a78, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1834898877}
     - target: {fileID: 6146357762284065940, guid: bc7f861c7c68bc347b2c3b5a34a92a78, type: 3}
       propertyPath: m_LocalScale.x
       value: 1

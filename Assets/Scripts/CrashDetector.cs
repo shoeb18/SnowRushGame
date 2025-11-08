@@ -6,11 +6,13 @@ public class CrashDetector : MonoBehaviour
     [SerializeField] ParticleSystem crashFX;
     [SerializeField] AudioClip crashSFX;
     public PlayerController playerController;
+    bool isDead = false;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ground"))
+        if (collision.CompareTag("Ground") && !isDead)
         {
+            isDead = true;
             crashFX.Play();
             GetComponent<AudioSource>().PlayOneShot(crashSFX);
             playerController.enabled = false;
