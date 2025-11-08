@@ -1,3 +1,5 @@
 #
 used 2d sprite shapes with edge colliders- to make custom sprite shape (like hills, snow mountain etc)
-
+used cinemachine for follow camera
+used surface effector 2d - applies force to other physics object when collides with surface effector 2d
+used torque to rotate player- adjust linear drag and angular drag
