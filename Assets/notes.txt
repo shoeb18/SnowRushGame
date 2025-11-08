@@ -5,3 +5,5 @@ used surface effector 2d - applies force to other physics object when collides w
 used torque to rotate player- adjust linear drag and angular drag
 namespace and scenemanager to load scene
 used Invoke("funcName", delay) to call a func after a delay
+used unity particle System
+FindAnyObjectByType<type>(); gets first component from the scene
