@@ -3,3 +3,5 @@ used 2d sprite shapes with edge colliders- to make custom sprite shape (like hil
 used cinemachine for follow camera
 used surface effector 2d - applies force to other physics object when collides with surface effector 2d
 used torque to rotate player- adjust linear drag and angular drag
+namespace and scenemanager to load scene
+used Invoke("funcName", delay) to call a func after a delay

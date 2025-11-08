@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CrashDetector : MonoBehaviour
 {
@@ -6,7 +7,12 @@ public class CrashDetector : MonoBehaviour
     {
         if (collision.CompareTag("Ground"))
         {
-            Debug.Log("Crashed");
+            Invoke("ReloadScene", 1f);
         }
+    }
+
+    void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

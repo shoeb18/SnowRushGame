@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
@@ -6,7 +7,12 @@ public class FinishLine : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Finished!!");
+            Invoke("ReloadScene", 2f);
         }
+    }
+
+    void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
