@@ -4,12 +4,16 @@ using UnityEngine.SceneManagement;
 public class CrashDetector : MonoBehaviour
 {
     [SerializeField] ParticleSystem crashFX;
+    [SerializeField] AudioClip crashSFX;
+    public PlayerController playerController;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Ground"))
         {
             crashFX.Play();
+            GetComponent<AudioSource>().PlayOneShot(crashSFX);
+            playerController.enabled = false;
             Invoke("ReloadScene", 1f);
         }
     }
